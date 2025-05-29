@@ -2,6 +2,22 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 1024px) {
+  .security-header {
+      padding: 30px;
+  }
+  
+  .security-header h1 {
+      font-size: 2rem;
+  }
+  
+  .security-cards {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+  }
+}
+
 body {
   background-image: url('x.webp');
         background-repeat: no-repeat;
