@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  .site-title {
-      font-size: 2rem;
-  }
-  
-  nav a {
-      padding: 10px 20px;
-  }
-}
-
-@keyframes swift-up {
-  to {
-      top: 0rem;
-  }
-}
-
 body {
   background-image: url('x.webp');
         background-repeat: no-repeat;
@@ -37,6 +21,7 @@ header {
     width: 100%;
     z-index: 999;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #528c9b;
@@ -63,6 +48,16 @@ header h1 {
     animation: .3s swift-up ease-in-out forwards;
 }
 
+@media (min-width: 1024px) {
+  .site-title {
+      font-size: 2rem;
+  }
+  
+  nav a {
+      padding: 10px 20px;
+  }
+}
+
 @keyframes swift-up {
     to {
         top: 0rem;
@@ -81,6 +76,14 @@ nav a {
 
 nav a:hover {
     color: lightgray;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
 }
 
 main {
