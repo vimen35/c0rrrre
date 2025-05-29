@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  main {
-    padding: 10px;
-    margin: 20px auto;
+@media (min-width: 1024px) {
+  .site-title {
+      font-size: 2rem;
   }
-  .image-one, .image-two {
-    float: none;
-    width: 100%;
+  
+  nav a {
+      padding: 10px 20px;
+  }
+}
+
+@keyframes swift-up {
+  to {
+      top: 0rem;
   }
 }
 
