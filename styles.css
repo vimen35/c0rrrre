@@ -21,13 +21,13 @@ header {
     width: 100%;
     z-index: 999;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #528c9b;
     color: white;
     padding: 15px 30px;
 }
+
 
 header h1 {
     margin: 0;
@@ -50,11 +50,14 @@ header h1 {
 
 @media (min-width: 1024px) {
   .site-title {
-      font-size: 2rem;
+    display: flex;
+    gap: 10px;
   }
   
   nav a {
-      padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
 }
 
@@ -63,27 +66,20 @@ header h1 {
         top: 0rem;
     }
 }
+
 nav {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: lightgray;
-}
-
-nav div {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  max-width: 300px;
+  color: lightgray;
 }
 
 main {
@@ -212,12 +208,6 @@ footer p {
     position: relative;
     top: 2rem;
     animation: .5s swift-up ease-in-out forwards;
-  }
-  
-  @keyframes swift-up {
-    to {
-      top: 0rem;
-    }
   }
   
   span:nth-of-type(1) i {
