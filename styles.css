@@ -48,18 +48,41 @@ header h1 {
     animation: .3s swift-up ease-in-out forwards;
 }
 
-@media (min-width: 1024px) {
-  .site-title {
-    display: flex;
-    gap: 10px;
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      padding: 10px 15px;
+      text-align: center;
   }
+  
+  .site-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      justify-content: center;
+  }
+  
+  nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  nav a {
+      font-size: 14px;
+      padding: 5px 8px;
+  }
+  
+  header h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+  }
+}
   
   nav a {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
   }
-}
 
 @keyframes swift-up {
     to {
@@ -80,7 +103,7 @@ nav a {
 
 nav a:hover {
   color: lightgray;
-}
+}  
 
 main {
     max-width: 800px;
